@@ -28,7 +28,7 @@ const DataRow = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/case_informations"
+        "https://da2s.onrender.com/case_informations"
       );
       setDatas(response.data);
       setLoading(false);
