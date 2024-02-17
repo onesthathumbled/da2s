@@ -1,0 +1,21 @@
+.Database {
+  font-size: 14px;
+}
+
+.Database p {
+  color: #727b75;
+}
+
+.Toolkit {
+  padding: 10px 0;
+  border-bottom: 1px solid #434343;
+}
+
+.Toolkit .Inside {
+  padding: 0 50px;
+}
+
+.Database .Toolkit-Bold {
+  color: #ea3625;
+  font-weight: 700;
+}

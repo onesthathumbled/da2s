@@ -1,0 +1,29 @@
+.OptionBar {
+  padding: 10px 50px;
+  border-bottom: 1px solid #434343;
+  font-size: 14px;
+}
+
+.OptionBar .Arrow {
+  margin-right: 7px;
+}
+
+.Tools {
+  display: flex;
+  flex-direction: row;
+}
+
+.Tools .More {
+  display: flex;
+  align-items: center;
+}
+
+.Tools a {
+  color: #727b75;
+  margin-right: 20px;
+  transition: all 0.2s;
+}
+
+.Tools a:hover {
+  color: #eeeeee;
+}

@@ -1,0 +1,59 @@
+.Navbar {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #434343;
+}
+
+.Navbar .Logo a {
+  color: #eeeeee;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.Logo-Title {
+  color: #ea3625;
+}
+
+.Navbar .Logo a:hover {
+  color: #ea3625;
+}
+
+.Navbar .Navigation {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.Navbar .Navigation a {
+  color: #727b75;
+  padding: 10px 25px;
+  transition: all 0.3s;
+}
+
+.Navbar .Navigation a:hover,
+.Navbar .Current {
+  color: #eeeeee !important;
+  background-color: #292929;
+}
+
+.Navbar .Navigation .More {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar .Navigation .Arrow {
+  margin-left: 7px;
+}
+
+.Navbar .Support a {
+  color: #ea3625;
+  margin: 0 7px;
+  transition: all 0.2s;
+}
+
+.Navbar .Support a:hover {
+  color: #eeeeee;
+}

@@ -1,0 +1,54 @@
+.Sidebar {
+  width: 3%;
+  background-color: #222222;
+  color: #ea3625;
+  text-align: center;
+}
+
+.FirstBlock {
+  padding: 15px 0;
+  border-bottom: 1px solid #434343;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.SecondBlock,
+.ThirdBlock {
+  padding: 5px 0;
+  border-bottom: 1px solid #434343;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.FourthBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 83.5vh;
+}
+
+.FourthBlock div {
+  padding: 10px 0;
+}
+
+.FourthBlock .div1 {
+  border-bottom: 1px solid #434343;
+}
+
+.FourthBlock .div2 {
+  background-color: #333333;
+  border-top: 1px solid #434343;
+}
+
+.CursorPointer {
+  cursor: pointer;
+}
+
+.FirstBlock:hover,
+.SecondBlock:hover,
+.ThirdBlock:hover {
+  background-color: #434343;
+}
