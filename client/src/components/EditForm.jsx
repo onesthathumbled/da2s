@@ -1,6 +1,7 @@
 import "./EditForm.css";
 import React, { useState } from "react";
 import axios from "axios";
+import BACKEND_URL from "../Constants";
 
 const EditForm = ({ id, setEditFormVisible, placeholder }) => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const EditForm = ({ id, setEditFormVisible, placeholder }) => {
       );
 
       const response = await axios.patch(
-        `http://localhost:3000/case_informations/${id}`,
+        `${BACKEND_URL}/cases/${id}`,
         nonEmptyFields
       );
 

@@ -1,14 +1,13 @@
 import "./DeletePrompt.css";
 import React from "react";
 import axios from "axios";
+import BACKEND_URL from "../Constants";
 
 const DeletePrompt = ({ setDeletePromptVisible, id }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.delete(
-        `http://localhost:3000/case_informations/${id}`
-      );
+      const response = await axios.delete(`${BACKEND_URL}/cases/${id}`);
       if (response) console.log(`Deleted successfuly`);
       setDeletePromptVisible(false);
     } catch (error) {

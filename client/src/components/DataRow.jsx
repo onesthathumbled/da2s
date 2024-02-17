@@ -9,6 +9,7 @@ import EditForm from "./EditForm";
 import DeletePrompt from "./DeletePrompt";
 import CreateForm from "./CreateForm";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
+import BACKEND_URL from "../Constants";
 
 const DataRow = () => {
   const [datas, setDatas] = useState([]);
@@ -27,9 +28,7 @@ const DataRow = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(
-        "https://da2s.onrender.com/case_informations"
-      );
+      const response = await axios.get(`${BACKEND_URL}/cases`);
       setDatas(response.data);
       setLoading(false);
     } catch (error) {
@@ -39,9 +38,7 @@ const DataRow = () => {
 
   const handlePlaceHolder = async (id) => {
     try {
-      const response = await axios.get(
-        `http://localhost:3000/case_informations/${id}`
-      );
+      const response = await axios.get(`${BACKEND_URL}/cases/${id}`);
       setPlaceHolder(response.data);
     } catch (error) {
       console.log(error);
@@ -123,11 +120,11 @@ const DataRow = () => {
             datas.map((data) => (
               <tr
                 className="Row"
-                key={data.case_id}
-                onContextMenu={(e) => handleContextMenu(e, data.case_id)}
+                key={data.id}
+                onContextMenu={(e) => handleContextMenu(e, data.id)}
                 onClick={(e) => handleClick(e)}
               >
-                <td>{data.case_id}</td>
+                <td>{data.id}</td>
                 <td>{data.age}</td>
                 <td>{data.age_group}</td>
                 <td>{data.sex}</td>

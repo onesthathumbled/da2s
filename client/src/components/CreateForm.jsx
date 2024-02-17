@@ -1,6 +1,7 @@
 import "./CreateForm.css";
 import React, { useState } from "react";
 import axios from "axios";
+import BACKEND_URL from "../Constants";
 
 const CreateForm = ({ setCreateFormVisible }) => {
   const [formData, setFormData] = useState({
@@ -28,10 +29,7 @@ const CreateForm = ({ setCreateFormVisible }) => {
     event.preventDefault();
 
     try {
-      const response = await axios.post(
-        `https://da2s.onrender.com/case_informations`,
-        formData
-      );
+      const response = await axios.post(`${BACKEND_URL}/cases`, formData);
 
       console.log(response.data);
 
