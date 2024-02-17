@@ -1,0 +1,50 @@
+.CreateForm {
+  /* background-color: #333333; */
+  background-color: #ea3625;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CreateForm form {
+  padding: 20px;
+  background-color: #111111;
+}
+
+.FormGroup {
+  color: #eeeeee;
+  margin-bottom: 10px;
+}
+
+.FormGroup label {
+  display: block;
+}
+
+.FormGroup input {
+  background-color: transparent;
+  border: 1px solid #333;
+  padding: 5px;
+  color: #ea3625;
+}
+
+.EditButton {
+  background-color: #ea3625;
+  color: #eeeeee;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+.CaseID {
+  color: #eeeeee;
+  margin-bottom: 5px;
+}
